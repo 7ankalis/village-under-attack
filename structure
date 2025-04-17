@@ -1,0 +1,44 @@
+village_under_attack/
+│
+├── include/                          # Fichiers .hpp (headers)
+│   ├── buildings/                    # Tous les types de bâtiments
+│   │   ├── Building.hpp              # Classe de base
+│   │   ├── TownHall.hpp
+│   │   ├── Wall.hpp
+│   │   ├── ResourceGenerator.hpp     # Classe de base
+│   │   ├── GoldMine.hpp
+│   │   └── ElixirCollector.hpp
+│   │
+│   ├── entities/                     # Toutes les entités
+│   │   ├── Entity.hpp                # Classe de base
+│   │   ├── Player.hpp
+│   │   ├── Npc.hpp
+│   │   ├── Enemy.hpp
+│   │   ├── Raider.hpp
+│   │   ├── Bomberman.hpp
+│   │   ├── Troop.hpp
+│   │   ├── Barbarian.hpp
+│   │   └── Archer.hpp
+│   │
+│   ├── engine/                       # Moteur de jeu
+│   │   ├── Board.hpp
+│   │   ├── GameEngine.hpp
+│   │   └── InputManager.hpp          # Gestion clavier (facultatif)
+│   │
+│   └── utils/
+│       ├── Position.hpp              # Coordonnées X, Y
+│       └── Resources.hpp             # Or et élixir
+│
+├── src/                              # Fichiers .cpp (implémentations)
+│   ├── buildings/
+│   ├── entities/
+│   ├── engine/
+│   └── main.cpp                      # Point d'entrée
+│
+├── assets/                           # Emojis / textures (futur SDL)
+│
+├── tests/                            # Tests unitaires éventuels
+│
+├── CMakeLists.txt                    # Configuration CMake
+└── README.md                         # Présentation du projet
+
